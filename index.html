@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="card-header">
+            <h1 id="title">Registration Form</h1>
+            <p id="description">Welcome to Andi's code, fill out the following form to receive exclusive information</p>
+        </div>
+            <form id="survey-form">
+                <label id="name-label" for="name">Name<input class="input" id="name" placeholder="Zoe" type="text" required /></label>
+                <label id="email-label" for="Email">Email <input class="input" id="email" placeholder="zoe@gmail.com" type="email"
+                        required></label>
+                <label id="number-label" for="phone-number">Phone number <input class="input" id="number" placeholder="9 9999 9999"
+                        type="number" min="9" max="9" required></label>
+                <label for="dropdown">Select your country<select class="input" name="dropdown" id="dropdown">
+                        <option value="">(Select one)</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="CL">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="ES">España</option>
+                        <option value="OT">Other</option>
+                    </select>
+                </label>
+                <fieldset> What is your favorite programming language?
+                    <label for="javascrip">
+                        <input id="javascrip" type="radio" value="javascrip" name="language-type" class="inline" />
+                        Javascrip
+                    </label>
+                    <label for="phyton">
+                        <input id="phyton" type="radio" value="phyton" name="language-type" class="inline" /> Phyton
+                    </label>
+                    <label for="VueJS">
+                        <input id="VueJS" type="radio" value="vuejs" name="language-type2" class="inline" /> VueJS
+                    </label>
+                    <label for="React">
+                        <input id="React" type="radio" value="react" name="language-type2" class="inline" /> React
+                    </label>
+                </fieldset>
+                <fieldset>What is your Interests?
+                    <label for="frontend">
+                        <input id="frontend" type="checkbox" value="interest1" class="inline"> Frontend
+                    </label>
+                    <label for="backend">
+                        <input id="backend" type="checkbox" value="interest2" class="inline"> Backend
+                    </label>
+                    <label for="fullstack">
+                        <input id="fullstack" type="checkbox" value="interest3" class="inline"> Fullstack
+                    </label>
+                    <label for="devops">
+                        <input id="devops" type="checkbox" value="interest4" class="inline"> DevOps
+                    </label>
+                </fieldset>
+                <label for="comments">Additional comments
+                    <textarea class="input" name="comments" id="comments" cols="30" rows="3"
+                        placeholder="I like coding on the beach..."></textarea>
+                </label>
+                <input id="submit" type="submit" value="R E G I S T E R">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
