@@ -28,7 +28,6 @@ body {
     width: 500px;
     position: relative;
     color: white;
-    margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
